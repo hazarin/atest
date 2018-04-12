@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.container-fluid {
+  background-color: #cccccc;
+  min-height: 100vh;
+}
+.container-fluid .row {
+  top: -50%;
+  transform: translateY(50%);
+}
+.container-fluid .jumbotron {
+  background-color: white;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .jumbotron {
+    border-radius: 0;
+    min-height: 100vh;
+  }
+  .container-fluid .row {
+    top: 0;
+    transform: translateY(0);
+  }
+}
